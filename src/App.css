@@ -1,0 +1,15 @@
+/* Add this to your global CSS file */
+@keyframes rotateDashedBorder {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    
+   
+    .animate-rotate-border {
+      animation: rotateDashedBorder 15s linear infinite;
+    }
+    
