@@ -59,8 +59,8 @@ const SlideBanner = () => {
                 <p className="text-[#ff7b19] lg:text-2xl text-xl font-extrabold" data-aos-delay="3000">
                   WELCOME T2DINNER
                 </p>
-                <p className="text-[50px] lg:text-[100px] py-2 font-bold" data-aos-delay="1000">{value.label}</p>
-                <div className="flex items-center ">
+                <p className="leading-none text-[50px] lg:text-[100px] py-2 font-bold" data-aos-delay="1000">{value.label}</p>
+                <div className="flex items-center mt-10">
                   <div className="flex items-center gap-4  px-4 lg:py-4 py-3 bg-[#eb0029] hover:bg-[#fc7919] transform duration-700">
                   <button>ORDER NOW </button>
                   <p className="text-xl bg-white text-slate-500"><IoIosArrowRoundForward  size={25}/></p>
