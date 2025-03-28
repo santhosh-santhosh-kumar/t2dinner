@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import BestFood from './Body/BestFood'
 import HeroBanner from './Body/HeroBanner'
 import SlideBanner from './Body/SlideBanner'
@@ -7,22 +7,36 @@ import BodyBanner from './Body/BodyBanner'
 import BestSelling from './Body/BestSelling'
 import AddressBar from './Body/AddressBar'
 import OwnerBanner from './Body/OwnerBanner'
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 const Body = () => {
+  
+  useEffect(() => {
+        AOS.init({
+          duration: 1000, 
+          once: false,
+          offset: 200,
+        });
+        AOS.refresh();
+      }, []);
+  
   return (
     <div>
       <SlideBanner />
-      <BestFood />
-      <HeroBanner />
-      <div className='lg:py-20 bg-[#f4f1ea]'>
+      <div data-aos="fade-up"><BestFood  /></div>
+      <div data-aos="fade-up">  <HeroBanner /></div>
+      <div className='lg:py-20 bg-[#f4f1ea]' data-aos="fade-up">
       <Adds />
       </div>
-      <BodyBanner />
-      <div className='bg-[#f4f1ea] lg:py-20'><BestSelling /></div>
-      <div>
+      <div data-aos="fade-up">   <BodyBanner /></div>
+  
+   
+      <div className='bg-[#f4f1ea] lg:py-20' data-aos="fade-up"><BestSelling /></div>
+      <div data-aos="fade-up">
         <AddressBar />
       </div>
-      <div>
+      <div data-aos="fade-up">
         <OwnerBanner />
       </div>
     </div>
