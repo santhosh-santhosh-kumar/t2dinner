@@ -4,8 +4,8 @@ import PopularFood from './PopularFood'
 
 const BestFood = () => {
   return (
-    <div className='bg-[#f4f1ea] py-10'>
-      <div className='flex justify-center items-center w-full text-[#e4812c] font-bold text-xl  font-mainFont'>
+    <div className='bg-[#f4f1ea] pt-10'>
+      <div className='flex justify-center items-center gap-2 w-full text-[#e4812c] font-bold text-xl  font-mainFont'>
             <img src={foodIcon} alt="" />
             <p>BEST FOOD</p>
             <img src={foodIcon} alt="" />

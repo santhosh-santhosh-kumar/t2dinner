@@ -7,6 +7,10 @@ export default {
       fontFamily:{
         "mainFont":["Roboto", "sans-serif"]
       },
+      colors:{
+        "themeRed":"#eb0029",
+        "themeYellow":"#ff7b19"
+      },
     },
   },
   plugins: [],
