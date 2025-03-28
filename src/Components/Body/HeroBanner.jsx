@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 
 import banner1 from "../../assets/herobanner/01.jpg";
 import banner2 from "../../assets/herobanner/02.jpg";
-import banner3 from "../../assets/herobanner/01.jpg";
+import banner3 from "../../assets/herobanner/03.jpg";
 
 import { useSelector } from "react-redux";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";

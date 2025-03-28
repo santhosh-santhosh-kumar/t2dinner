@@ -10,6 +10,33 @@
     
    
     .animate-rotate-border {
-      animation: rotateDashedBorder 15s linear infinite;
+      animation: rotateDashedBorder 30s linear infinite;
     }
     
+
+    @keyframes scrollHalfwayReset {
+      0% {
+        transform: translateX(100%); 
+      }
+     
+      100% {
+        transform: translateX(-100%); 
+      }
+    }
+    
+    .animate-scroll {
+      animation: scrollHalfwayReset 20s linear infinite;
+      will-change: transform;     }
+    
+
+      @media (max-width: 640px) {  
+            .animate-scroll {
+              animation: scrollHalfwayReset 10s linear infinite; 
+            }
+          }
+          
+          @media (max-width: 768px) {  
+            .animate-scroll {
+              animation: scrollHalfwayReset 15s linear infinite; 
+            }
+          }

@@ -2,6 +2,11 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { popularFoodData } from "../../Slices/PopularFoodSlice";
 import { MdOutlineCurrencyRupee } from "react-icons/md";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const PopularFood = () => {
   const popularFoodList = useSelector(popularFoodData);
@@ -9,19 +14,53 @@ const PopularFood = () => {
   return (
     <div>
       <div className="flex items-cente justify-center gap-8">
-        {popularFoodList.map((value) => {
-          return (
-            <>
-              <div className="bg-white p-10 font-mainFont rounded-xl relative">
-                <div className="relative ">
-                  <div className=" border-dashed border-2 border-[#dd032e] rounded-full p-20 animate-rotate-border"></div>
-                  <div className="w-40 h-40 overflow-hidden absolute inset-0 left-1 top-0 rounded-full">
-                    <img
-                      src={value.img}
-                      alt={value.label}
-                      className="w-full h-full object-cover rounded-full"
-                    />
-                  </div>
+        <div className="bg-white p-10 font-mainFont rounded-xl relative">
+          <Swiper
+            modules={[Autoplay, Navigation, Pagination]}
+            loop={true}
+            speed={1000}
+            navigation={{
+              nextEl: ".custom-gurus-next",
+              prevEl: ".custom-gurus-prev",
+            }}
+            pagination={{
+              el: ".custom-pagination",
+              clickable: true,
+              bulletClass: "custom-bullet",
+              bulletActiveClass: "custom-bullet-active",
+            }}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+              },
+
+              640: {
+                slidesPerView: 2,
+              },
+
+              1024: {
+                slidesPerView: 3,
+              },
+
+              1280: {
+                slidesPerView: 4,
+                spaceBetween: -100,
+              },
+            }}
+          >
+            {popularFoodList.map((value, index) => (
+              <SwiperSlide key={index} className="flex w-[200px] h-[200px]">
+                <div className="inline-block border-dashed border-2 border-[#dd032e] rounded-full p-2 animate-rotate-border">
+                  <img
+                    src={value.img}
+                    alt=""
+                    className="w-full h-full object-cover rounded-full"
+                  />
                 </div>
                 <div className="text-center">
                   <p className="font-bold text-xl leading-[2rem]">
@@ -35,10 +74,10 @@ const PopularFood = () => {
                     <p>{value.fee}</p>
                   </p>
                 </div>
-              </div>
-            </>
-          );
-        })}
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
   );
