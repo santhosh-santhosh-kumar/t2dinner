@@ -1,13 +1,16 @@
 import React from "react";
 import { ImLocation2 } from "react-icons/im";
+import { MdEmail } from "react-icons/md";
+
+import { FaPhone } from "react-icons/fa6";
 
 
 const AddressBar = () => {
   return (
-    <div className="py-4 px-32 ">
-      <div className="bg-[#fb7919] w-full flex justify-around p-6 rounded-lg py-6">
+    <div className="py-4 lg:px-32">
+      <div className="bg-[#fb7919] w-full lg:flex flex-wrap justify-around lg:p-6 px-4  rounded-lg py-10">
         <div>
-          <p className="flex items-center gap-2">
+          <p className="flex items-center gap-3">
             <p className="border bg-white text-themeYellow p-2  rounded-full">
             <ImLocation2 />
             </p>
@@ -18,24 +21,27 @@ const AddressBar = () => {
           </p>
         </div>
         <div>
-          <p className="flex items-center gap-2">
+          <p className="flex items-center gap-3">
             <p className="border bg-white text-themeYellow p-2 rounded-full">
-            <ImLocation2 />
+            <MdEmail />
+
+
             </p>
             <div className="text-white  font-mainFont">
-            <p>Address</p>
-            <p className="text-xl">Main Street,pachamalai,Gobi</p>
+            <p>Send Email</p>
+            <p className="text-xl">t2dinner@gmail.com</p>
             </div>
           </p>
         </div>
         <div>
-          <p className="flex items-center gap-2">
+          <p className="flex items-center gap-3">
             <p className="border bg-white text-themeYellow p-2 rounded-full">
-            <ImLocation2 />
+            <FaPhone />
+
             </p>
             <div className="text-white  font-mainFont">
-            <p>Address</p>
-            <p className="text-xl">Main Street,pachamalai,Gobi</p>
+            <p>Call Emergency</p>
+            <p className="text-xl">95 66 66 5194</p>
             </div>
           </p>
         </div>

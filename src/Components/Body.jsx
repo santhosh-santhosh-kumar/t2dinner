@@ -20,7 +20,7 @@ const Body = () => {
       <BodyBanner />
       <div className='bg-[#f4f1ea] lg:py-20'><BestSelling /></div>
       <div>
-        {/* <AddressBar /> */}
+        <AddressBar />
       </div>
       <div>
         <OwnerBanner />
