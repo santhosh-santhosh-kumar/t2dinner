@@ -25,7 +25,7 @@ const Body = () => {
     <div>
       <SlideBanner />
       <div data-aos="fade-up"><BestFood  /></div>
-      <div data-aos="fade-up">  <HeroBanner /></div>
+      <div >  <HeroBanner /></div>
       <div className='lg:py-20 bg-[#f4f1ea]' data-aos="fade-up">
       <Adds />
       </div>

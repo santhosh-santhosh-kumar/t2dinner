@@ -14,13 +14,13 @@ const NavBar = () => {
             <div className='flex items-center gap-8 text-lg font-mainFont'>
                   {navbarList.map((value)=>{
                         return <>
-                        <p>{value.label}</p>
+                        <p className='cursor-pointer'>{value.label}</p>
                         </>
                   })}
             </div>
             <div className='flex items-center gap-4'>
-                  <p><IoSearchOutline size={25} className='text-[#4d5b68]' /></p>
-                  <p>
+                  <p className='cursor-pointer'><IoSearchOutline size={25} className='text-[#4d5b68]' /></p>
+                  <p className='cursor-pointer'>
                   <FiMenu size={25} className='text-[#4d5b68]' />
                   </p>
             </div>

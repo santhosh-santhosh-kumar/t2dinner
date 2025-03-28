@@ -11,6 +11,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { useDispatch } from "react-redux";
+import { sendMessage } from "../../Slices/Whatsapp";
 
 
 const SlideBanner = () => {
@@ -20,6 +22,7 @@ const SlideBanner = () => {
     { id: 3, label: "Evening Meal Supper Time", img: banner03 },
     { id: 4, label: "End-of-Day Dish Supper Time", img: banner04 },
   ];
+  const dispatch=useDispatch()
   useEffect(() => {
       AOS.init({
         duration: 2000, 
@@ -27,6 +30,9 @@ const SlideBanner = () => {
       });
     }, []);
 
+    const handleClick = ()=>{
+      dispatch(sendMessage())
+    }
   return (
     <div
       className="px-4 w-full lg:h-[600px] bg-cover bg-center object-cover"
@@ -61,8 +67,8 @@ const SlideBanner = () => {
                 </p>
                 <p className="leading-none text-[50px] lg:text-[100px] py-2 font-bold" data-aos-delay="1000">{value.label}</p>
                 <div className="flex items-center mt-10">
-                  <div className="flex items-center gap-4  px-4 lg:py-4 py-3 bg-[#eb0029] hover:bg-[#fc7919] transform duration-700">
-                  <button>ORDER NOW </button>
+                  <div className="cursor-pointer flex items-center gap-4  px-4 lg:py-4 py-3 bg-[#eb0029] hover:bg-[#fc7919] transform duration-700">
+                  <button onClick={handleClick}>ORDER NOW </button>
                   <p className="text-xl bg-white text-slate-500"><IoIosArrowRoundForward  size={25}/></p>
                   </div>
                 </div>

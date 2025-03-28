@@ -1,5 +1,5 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { navbarData } from "../../Slices/NavbarDataSlice";
 import logoImg from "../../assets/logo/05.png";
 import { FaXmark } from "react-icons/fa6";
@@ -11,9 +11,11 @@ import { PiShoppingCartBold } from "react-icons/pi";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
+import { sendMessage } from "../../Slices/Whatsapp";
 
 const MobileNavbar = ({ show, setShow }) => {
   const navbarList = useSelector(navbarData);
+  const dispatch=useDispatch()
   return (
     <div className="">
       <div className=" flex  items-center  gap-10 px-10 py-4">
@@ -58,7 +60,7 @@ const MobileNavbar = ({ show, setShow }) => {
               <CiMail />
             </p>
             <p className="text-slate-600 font-semibold">
-              <p>Vicky@t2dinner.com</p>
+            <a href="mailto:Vicky@t2dinner.com"><p>Vicky@t2dinner.com</p></a>
             </p>
           </div>
           <div className="flex items-center gap-2 py-4">
@@ -74,13 +76,13 @@ const MobileNavbar = ({ show, setShow }) => {
             <FiPhone />
             </p>
             <p className="text-slate-600 font-semibold">
-              <p>+91 95 66 66 5194</p>
+            <a href="tel:+919566665194"><p>+91 95 66 66 5194</p></a>
             </p>
           </div>
         </div>
       </div>
       <div className="flex items-center px-4 w-full">
-            <p className="border flex justify-center items-center gap-3 text-white px-6 py-4 bg-[#eb0029]">
+            <p className="border flex justify-center items-center gap-3 text-white px-6 py-4 bg-[#eb0029]" onClick={()=>dispatch(sendMessage())}>
                   <p><PiShoppingCartBold /></p>
                   <p>ORDER NOW</p>
             </p>

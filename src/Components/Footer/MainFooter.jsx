@@ -21,13 +21,13 @@ const MainFooter = () => {
           <p>95 66 66 5194</p>
         </div>
         <div className="flex items-center gap-4 mt-4">
-          <p className="border p-2 text-xl text-white hover:bg-themeYellow">
+          <p className="cursor-pointer border p-2 text-xl text-white hover:bg-themeYellow">
             <FaFacebookF />
           </p>
-          <p className="border p-2 text-xl text-white hover:bg-themeYellow">
+          <p className="cursor-pointer border p-2 text-xl text-white hover:bg-themeYellow">
             <FaInstagram />
           </p>
-          <p className="border p-2 text-xl text-white hover:bg-themeYellow">
+          <p className="cursor-pointer border p-2 text-xl text-white hover:bg-themeYellow">
             <MdOutlineEmail />
           </p>
         </div>
