@@ -31,7 +31,7 @@ const Adds = () => {
   ];
 
   return (
-    <div className="lg:flex justify-center items-center gap-6 py-10 lg:px-20">
+    <div className="lg:flex justify-center items-center gap-6  lg:px-20">
       {addsList.map((value) => {
         return (
           <>
