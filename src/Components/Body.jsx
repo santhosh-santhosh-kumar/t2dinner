@@ -6,7 +6,7 @@ const Body = () => {
   return (
     <div>
       <HeroBanner />
-      {/* <BestFood /> */}
+      <BestFood />
     </div>
   )
 }

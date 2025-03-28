@@ -10,7 +10,7 @@ const BestFood = () => {
             <p>BEST FOOD</p>
             <img src={foodIcon} alt="" />
       </div>
-      <div className='flex justify-center items-center w-full text-4xl font-extrabold font-mainFont'>
+      <div className='flex justify-center items-center w-full text-4xl font-extrabold font-mainFont py-4'>
             <p>Popular Food Items</p>
       </div>
       <div className='px-20 py-10'>
