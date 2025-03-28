@@ -19,13 +19,7 @@ const SlideBanner = () => {
     { id: 4, label: "End-of-Day Dish Supper Time", img: banner04 },
   ];
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: true,
-    });
-  }, []);
+
   return (
     <div
       className="px-4 w-full lg:h-[600px] bg-cover bg-center object-cover"
@@ -53,14 +47,14 @@ const SlideBanner = () => {
       >
         {sliderObjects.map((value, index) => (
           <SwiperSlide key={index} className="w-full h-full">
-            <div className="lg:flex text-white items-center font-mainFont pt-32">
-              <div data-aos="fade-left">
-                <p className="text-[#ff7b19] text-2xl font-extrabold">
+            <div className="lg:flex text-white items-center font-mainFont lg:pt-32 pt-10">
+              <div >
+                <p className="text-[#ff7b19] lg:text-2xl text-xl font-extrabold" data-aos-delay="3000">
                   WELCOME T2DINNER
                 </p>
-                <p className="text-[100px] font-bold">{value.label}</p>
+                <p className="lg:text-[100px] text-4xl font-bold" data-aos-delay="1000">{value.label}</p>
               </div>
-              <div data-aos="fade-left">
+              <div >
                 <img src={value.img} alt="" />
               </div>
             </div>
