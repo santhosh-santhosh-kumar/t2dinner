@@ -7,8 +7,9 @@ const Body = () => {
   return (
     <div>
       <SlideBanner />
-      <HeroBanner />
+      
       <BestFood />
+      <HeroBanner />
     </div>
   )
 }
