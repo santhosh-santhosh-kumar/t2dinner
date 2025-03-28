@@ -6,6 +6,7 @@ import Adds from './Body/Adds'
 import BodyBanner from './Body/BodyBanner'
 import BestSelling from './Body/BestSelling'
 import AddressBar from './Body/AddressBar'
+import OwnerBanner from './Body/OwnerBanner'
 
 const Body = () => {
   return (
@@ -20,6 +21,9 @@ const Body = () => {
       <div className='bg-[#f4f1ea] lg:py-20'><BestSelling /></div>
       <div>
         {/* <AddressBar /> */}
+      </div>
+      <div>
+        <OwnerBanner />
       </div>
     </div>
   )
