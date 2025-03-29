@@ -7,9 +7,9 @@ import { FaPhone } from "react-icons/fa6";
 
 const AddressBar = () => {
   return (
-    <div className="py-4 lg:px-32">
+    <div className="py-4 lg:px-32 px-2">
       <div className="bg-[#fb7919] w-full lg:flex flex-wrap justify-around lg:p-6 px-4  rounded-lg py-10">
-        <div>
+        <div className="py-6">
           <p className="flex items-center gap-3">
             <p className="border bg-white text-themeYellow p-2  rounded-full">
             <ImLocation2 />
@@ -20,7 +20,7 @@ const AddressBar = () => {
             </div>
           </p>
         </div>
-        <div>
+        <div className="py-6">
           <p className="flex items-center gap-3">
             <p className="border bg-white text-themeYellow p-2 rounded-full">
             <MdEmail />
@@ -33,7 +33,7 @@ const AddressBar = () => {
             </div>
           </p>
         </div>
-        <div>
+        <div className="py-6">
           <p className="flex items-center gap-3">
             <p className="border bg-white text-themeYellow p-2 rounded-full">
             <FaPhone />

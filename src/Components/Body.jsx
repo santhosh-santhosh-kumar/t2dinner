@@ -29,7 +29,7 @@ const Body = () => {
       <div className='lg:py-20 bg-[#f4f1ea]' data-aos="fade-up">
       <Adds />
       </div>
-      <div data-aos="fade-up">   <BodyBanner /></div>
+      <div className='my-4' data-aos="fade-up"><BodyBanner /></div>
   
    
       <div className='bg-[#f4f1ea] lg:py-20' data-aos="fade-up"><BestSelling /></div>

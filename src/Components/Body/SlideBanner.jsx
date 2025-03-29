@@ -4,7 +4,7 @@ import banner01 from "../../assets/sliderbanner/banner01.png";
 import banner02 from "../../assets/sliderbanner/banner02.png";
 import banner03 from "../../assets/sliderbanner/banner06.png";
 import banner04 from "../../assets/sliderbanner/banner04.png";
-import AOS from "aos";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -23,12 +23,7 @@ const SlideBanner = () => {
     { id: 4, label: "End-of-Day Dish Supper Time", img: banner04 },
   ];
   const dispatch=useDispatch()
-  useEffect(() => {
-      AOS.init({
-        duration: 2000, 
-        once: true, 
-      });
-    }, []);
+ 
 
     const handleClick = ()=>{
       dispatch(sendMessage())
@@ -66,7 +61,7 @@ const SlideBanner = () => {
                   WELCOME T2DINNER
                 </p>
                 <p className="leading-none text-[50px] lg:text-[100px] py-2 font-bold" data-aos-delay="1000" style={{ animation: 'bounce 3s infinite' }}>{value.label}</p>
-                <div className="flex items-center mt-10">
+                <div className="flex items-center mt-10" style={{ animation: 'fadeIn 1s ease-out', animationDelay: '2s' }}>
                   <div className="cursor-pointer flex items-center gap-4  px-4 lg:py-4 py-3 bg-[#eb0029] hover:bg-[#fc7919] transform duration-700">
                   <button onClick={handleClick} >ORDER NOW </button>
                   <p className="text-xl bg-white text-slate-500"><IoIosArrowRoundForward  size={25}/></p>
