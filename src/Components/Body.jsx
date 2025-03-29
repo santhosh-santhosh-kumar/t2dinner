@@ -10,6 +10,7 @@ import OwnerBanner from './Body/OwnerBanner'
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import MeetChef from './Body/MeetChef'
+import MobileMeetChef from './Body/MobileMeetChef'
 
 const Body = () => {
   
@@ -40,7 +41,9 @@ const Body = () => {
       <div data-aos="fade-up">
         <OwnerBanner />
       </div>
-      <div><MeetChef /></div>
+      <div className='lg:block hidden'><MeetChef /></div>
+      <div className=':block lg:hidden'><MobileMeetChef /></div>
+      
     </div>
   )
 }

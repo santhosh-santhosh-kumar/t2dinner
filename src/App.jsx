@@ -31,6 +31,7 @@ function App() {
                   display: "inline-block",
                   animation: `topBounce 1.5s ease-in-out ${index * 0.2}s infinite`,
                   color: index < 3 ? "red" : "Black",
+                  fontSize:index==1 ? "100px" : ""
                 }}
               >
                 {char}
