@@ -8,8 +8,8 @@ const initialState = {
   navbarDatas: [
     { id: 1, label: "Home", icon: <MdHomeMax /> },
     { id: 2, label: "About", icon: <MdOutlineRoundaboutLeft /> },
-    { id: 3, label: "News", icon: <TiNews /> },
-    { id: 4, label: "Pages", icon: <RiPagesLine /> },
+    { id: 3, label: "Menu", icon: <TiNews /> },
+    { id: 4, label: "Gallery", icon: <RiPagesLine /> },
   ],
 };
 

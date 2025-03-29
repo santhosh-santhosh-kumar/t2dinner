@@ -35,14 +35,15 @@ const Body = () => {
   
    
       <div className='bg-[#f4f1ea] lg:py-20' data-aos="fade-up"><BestSelling /></div>
-      <div data-aos="fade-up">
-        <AddressBar />
-      </div>
+   
       <div data-aos="fade-up">
         <OwnerBanner />
       </div>
       <div className='lg:block hidden'><MeetChef /></div>
       <div className=':block lg:hidden'><MobileMeetChef /></div>
+      <div data-aos="fade-up">
+        <AddressBar />
+      </div>
       
     </div>
   )

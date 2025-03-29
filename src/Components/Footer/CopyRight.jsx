@@ -1,10 +1,11 @@
 import React from 'react'
 
 const CopyRight = () => {
+  const currentYear = new Date().getFullYear(); 
   return (
    <div className='bg-themeRed  text-white font-mainFont lg:flex justify-between py-4 px-10'>
        <div className='lg:py-0 py-2'>
-      © All Copyright 2024 by T2Dinner
+      © All Copyright {currentYear} by T2Dinner
     </div>
     <div className='lg:flex items-center gap-2'>
       <p>Design And Developed by :</p>
