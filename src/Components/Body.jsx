@@ -9,6 +9,7 @@ import AddressBar from './Body/AddressBar'
 import OwnerBanner from './Body/OwnerBanner'
 import AOS from "aos";
 import 'aos/dist/aos.css';
+import MeetChef from './Body/MeetChef'
 
 const Body = () => {
   
@@ -22,7 +23,7 @@ const Body = () => {
       }, []);
   
   return (
-    <div>
+    <div className='mt-36'>
       <SlideBanner />
       <div data-aos="fade-up"><BestFood  /></div>
       <div >  <HeroBanner /></div>
@@ -39,6 +40,7 @@ const Body = () => {
       <div data-aos="fade-up">
         <OwnerBanner />
       </div>
+      <div><MeetChef /></div>
     </div>
   )
 }

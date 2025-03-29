@@ -9,8 +9,8 @@ const MobileLog = () => {
       const [show,setShow]=useState(false)
   return (
     <>
-      <div className="flex justify-between items-center  px-4">
-        <div className=" lg:w-80 lg:h-40 w-60 h-24">
+      <div className="flex justify-between items-center  px-4 bg-white">
+        <div className=" lg:w-80 lg:h-40 w-60 h-24 ">
           <img src={logoImage} alt="" className="w-full h-full object-cover" />
         </div>
         <div className="lg:hidden" onClick={()=>setShow(true)}>

@@ -8,8 +8,8 @@ import { FiMenu } from "react-icons/fi";
 const Logo = () => {
   return (
     <>
-    <div className='lg:flex  w-full'>
-    <div className=' lg:w-80 lg:h-40 w-60 h-24'>
+    <div className='lg:flex  w-full '>
+    <div className=' lg:w-80 lg:h-40 w-60 h-24 bg-white'>
       <img src={logoImage} alt="" className='w-full h-full object-cover' />
     </div>
     <div className="lg:hidden">
@@ -19,7 +19,7 @@ const Logo = () => {
       <div>
       <Timeing />
       </div>
-      <div className='lg:block hidden'>
+      <div className='lg:block hidden '>
       <NavBar />
       </div>
       <div className='lg:hidden block'>
