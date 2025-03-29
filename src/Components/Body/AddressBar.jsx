@@ -9,9 +9,9 @@ const AddressBar = () => {
   return (
     <div className="py-4 lg:px-32 px-2">
       <div className="bg-[#fb7919] w-full lg:flex flex-wrap justify-around lg:p-6 px-4  rounded-lg py-10">
-        <div className="py-6">
+        <div className="py-6" >
           <p className="flex items-center gap-3">
-            <p className="border bg-white text-themeYellow p-2  rounded-full">
+            <p className="border bg-white text-themeYellow p-2  rounded-full" style={{ animation: 'topBounce 3s infinite' }}>
             <ImLocation2 />
             </p>
             <div className="text-white  font-mainFont">
@@ -22,7 +22,7 @@ const AddressBar = () => {
         </div>
         <div className="py-6">
           <p className="flex items-center gap-3">
-            <p className="border bg-white text-themeYellow p-2 rounded-full">
+            <p className="border bg-white text-themeYellow p-2 rounded-full" style={{ animation: 'topBounce 3s infinite' }}>
             <MdEmail />
 
 
@@ -35,7 +35,7 @@ const AddressBar = () => {
         </div>
         <div className="py-6">
           <p className="flex items-center gap-3">
-            <p className="border bg-white text-themeYellow p-2 rounded-full">
+            <p className="border bg-white text-themeYellow p-2 rounded-full" style={{ animation: 'topBounce 3s infinite' }}>
             <FaPhone />
 
             </p>

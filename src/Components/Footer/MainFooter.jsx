@@ -16,9 +16,9 @@ const MainFooter = () => {
           />
         </div>
         <div className="text-white  font-semibold">
-          <p className="text-xl">Vignesh kumar</p>
+          <p className="text-xl py-2">Vignesh kumar</p>
           <p>Main Street,pachamalai,Gobi</p>
-          <p>95 66 66 5194</p>
+          <p className="py-1">95 66 66 5194</p>
         </div>
         <div className="flex items-center gap-4 mt-4">
           <p className="cursor-pointer border p-2 text-xl text-white hover:bg-themeYellow">

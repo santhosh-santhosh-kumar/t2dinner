@@ -43,15 +43,28 @@
 
           @keyframes bounce {
             0% {
-              transform: translate(0, 0); /* Starting at top-left */
+              transform: translate(0, 0); 
             }
             50% {
-              transform: translate(1vw, 1vh); /* Move to bottom-right */
+              transform: translate(1vw, 1vh); 
             }
             100% {
-              transform: translate(0, 0); /* Return to top-left */
+              transform: translate(0, 0); 
             }
           }
+
+          @keyframes topBounce {
+            0% {
+              transform: translateY(0); /* Initial position */
+            }
+            50% {
+              transform: translateY(-10px); /* Move up */
+            }
+            100% {
+              transform: translateY(0); /* Return to original position */
+            }
+          }
+          
 
           @keyframes fadeIn {
             0% {
