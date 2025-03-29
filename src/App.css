@@ -40,3 +40,15 @@
               animation: scrollHalfwayReset 15s linear infinite; 
             }
           }
+
+          @keyframes bounce {
+            0% {
+              transform: translate(0, 0); /* Starting at top-left */
+            }
+            50% {
+              transform: translate(1vw, 1vh); /* Move to bottom-right */
+            }
+            100% {
+              transform: translate(0, 0); /* Return to top-left */
+            }
+          }

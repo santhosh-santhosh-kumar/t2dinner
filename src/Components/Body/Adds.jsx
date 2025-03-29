@@ -70,7 +70,7 @@ useEffect(() => {
                 </div>
               </div>
               <div className="lg:w-40 lg:h-40 w-60 h-60 lg:mt-10">
-                  <img src={value.img} alt="" className="w-full h-full object-contain"/>
+                  <img src={value.img} alt="" className="w-full h-full object-contain" style={{ animation: 'bounce 3s infinite' }}/>
               </div>
             </div>
           </>
