@@ -11,6 +11,7 @@ import AOS from "aos";
 import 'aos/dist/aos.css';
 import MeetChef from './Body/MeetChef'
 import MobileMeetChef from './Body/MobileMeetChef'
+import Scroll from './Body/Scroll'
 
 const Body = () => {
   
@@ -28,9 +29,11 @@ const Body = () => {
       <SlideBanner />
       <div data-aos="fade-up"><BestFood  /></div>
       <div >  <HeroBanner /></div>
+      <Scroll />
       <div className='lg:py-20 bg-[#f4f1ea]' data-aos="fade-up">
       <Adds />
       </div>
+      <Scroll />
       <div className='my-4' data-aos="fade-up"><BodyBanner /></div>
   
    
